@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="anwerwaildz05@gmail.com" method="post">
+        <fieldset>
+            <label for="First-name">Enter Your First Name:
+                <input id="First-name" type="text" name="First-name" required>
+             </label>
+            
+            <label for="last-name">Enter Your Last Name: 
+                <input id="last-name" type="text" name="last-name" required>
+            </label>
+            
+            <label for="email">Enter Your Email: 
+                <input id="user-name" type="email" name="user-name" required>
+            </label>
+            
+            <label for="password">Create a New Password: 
+                <input id="password" type="password" name="password" required pattern="[a-z0-5]{8,}">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal">
+                <input checked class="inline" type="radio" name="account-type" id="personal">Personal
+            </label>
+            <label for="business">
+                <input class="inline" type="radio" name="account-type" id="business">Business
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="pfp">Upload a profile picture:
+                <input type="file" name="profile-picture" id="pfp">
+            </label>
+            <label for="age">Input your age (years):
+                <input type="number" name="age" id="age" required min="13" max="120" required>
+            </label>
+            <label for="select">How did you hear about us?
+                <select required name="reffrence" id="select">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCapm News</option>
+                    <option value="2">freeCodeCapm Youtube Channel</option>
+                    <option value="3">freeCodeCapm Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio:
+                <textarea name="bio" id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea>
+            </label>
+            <label for="terms">
+                <input class="inline" type="checkbox" name="terms" id="terms" required>
+                I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">
+                    terms and conditions</a>
+            </label>
+            <button class="submit" type="submit">Submit</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
